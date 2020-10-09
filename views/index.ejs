@@ -1,19 +1,50 @@
-<%- include partials/header.ejs%>
+<%- include('./partials/header.ejs') -%>
+<%- include('./partials/main_nav.ejs') -%>
 
-<%- include partials/main_nav.ejs%>
 
 <!--Main Content-->
   <main class="container">
+  <div class="row">
+  <div class="col">
     <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      <h1 class="display-4"><%= title %></h1>
       
+      </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-6">
+        <p class="display-5">Welcome to the <%= title %> page</p>
+        <hr class="my-4">
+      </div>
+    </div>
+
+
+    <!--Additional Content goes here-->
+
+    <section class="mission">
+      <div class="container">
+        <div style="margin-bottom: 90px;" class="page-section">
+        <h2 class="page-section__paragraph-lg">Mission Statement</h2>
+        <p class="page-section__paragraph-lg">To always live with integrity, positivity  and 
+          strive to use everyday and every experience as an opportunity for improvement and growth.
+           I intend to apply this to my life personally and professionally.</p> <br>
+        <a href="/about">Visit my About me page to find out more about me!</a> <br>
+        <a href="/projects">Visit my Projects page to access some of my projects!</a> <br>
+        <a href="/services">Visit my Services page to find out more my work!</a> <br>
+        <a href="/contact">Feel free to connect with me!</a> <br>
+
+        
+        </div>
+      </div>
+    </section >
+
+
   </main>
 
   
-<%- include partials/bottom_nav.ejs %>
-
-<%- include partials/footer.ejs %> 
+<%- include('./partials/bottom_nav.ejs') -%>
+<%- include('./partials/footer.ejs') -%> 
 
 
 
