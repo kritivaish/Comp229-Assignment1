@@ -1,1 +1,9 @@
-/* custom css goes here */
+
+/* ------------------- Body ------------------- */
+<style type="text/css" media="screen"> 
+  body { 
+      background-color: rgb(252, 242, 250); 
+      text-decoration-color: white; 
+       
+  } 
+</style> 
